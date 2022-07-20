@@ -1,0 +1,156 @@
+
+
+
+.slide-container{
+	max-width: 1120px;
+	width: 100%;
+	
+	padding: 40px;
+}
+.slide-content{
+	
+	margin: 0 40px;
+	background-color: gold;
+	border-radius: 25px;
+}
+
+.card{
+
+	border-radius: 25px;
+	background-color: #fff;
+}
+.image-content, .card-content{ 
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+padding: 10px 14px;
+}
+
+.image-content{
+	
+	position: relative;
+	row-gap: 5px;
+	padding: 25px 0;
+	
+}
+
+.overlay{
+	position: absolute;
+	right: 0;
+	 left: 0;
+	 top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+	border-radius: 25px 25px 0 25px;
+	
+	 
+}
+.overlay::before,
+.overlay::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+	height: 30px;
+	width: 30px;
+	background-color: #333;
+
+	
+
+}
+
+.overlay::after{
+	border-radius: 0 25px 0 0;
+	background-color: #fff;
+	
+}
+.card-image{
+	position: relative;
+	height: 150px;
+	width: 150px;
+	background: #fff;
+	border-radius: 50%;
+	padding: 3px;
+
+}
+.card-image .card-img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 4px solid gold;
+	 
+}
+
+.name{
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+}
+
+.description{
+font-size: 14px;
+color: #707070;
+text-align: center;
+}
+
+
+.button{
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	padding: 8px 16px;
+	background-color: rgb(187, 163, 29);
+	border-radius: 6px;
+	margin: 14px;
+	transition: all 0.4s ease;
+
+}
+.button:hover{
+	background-color: rgb(143, 130, 60);
+	cursor: pointer;
+}
+
+.swiper-navBtn{
+	color: gold;
+	transition: color 0.3 ease;
+
+}
+
+.swiper-navBtn:hover{
+	color: rgb(143, 130, 60);
+
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+	font-size: 40px;
+}
+
+.swiper-button-next{
+	right: 0;
+}
+
+.swiper-button-prev{
+	left: 0;
+}
+
+.swiper-pagination-bullet{
+	background-color: rgb(143, 130, 60);
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+	background-color: gold;
+}
+
+@media screen and (max-width: 768px) {
+	.slide-content{
+		margin: 0 10px;
+	}
+
+	.swiper-navBtn{
+		display: none;
+	}
+}

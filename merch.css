@@ -1,0 +1,108 @@
+body {
+ 
+  background-size: cover;
+}
+.event_bottom > h2 {
+  align-self: flex-start;
+  margin-left: 40px;
+  color: white;
+  font-size: 30px;
+  padding: 40px;
+}
+.event_bottom {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event_body {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.event_body > img {
+  max-height: 380px;
+  width: 40%;
+  border-radius: 20px;
+  object-fit: contain;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.hireus_card {
+  position: absolute;
+  top: 24% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 360px;
+  border: 8px sold #fff;
+  box-shadow: 0 5px 5px #000;
+  background-color: #000;
+  opacity: 0.9;
+  overflow: hidden;
+  margin: 20px 15px;
+  flex-wrap: wrap;
+}
+
+.hireus_card > h3 {
+  margin: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.hireus_card p {
+  line-height: 23px;
+  margin: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5px;
+}
+.shirt-image-container img{
+  width: 100%;
+
+  border-radius: 20px;
+
+}
+.shirt-image-container{
+  padding: 10px;
+}
+@media screen and (max-width: 1300px) {
+  .hireus_card {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .event_body {
+    width: 100% !important;
+  }
+  .event_body img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .event_body {
+    width: 100% !important;
+  }
+  .event_body img {
+    width: 100%;
+  }
+}
